@@ -35,17 +35,31 @@ This was written long after actually setting up the environment so in case you f
 - Install [powerlevel10k](https://github.com/romkatv/powerlevel10k). \
   `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k`.
 - Copy `.p10k.zsh` from this repo to `~/.p10k.zsh`
-- Install the [Meslo Nerd font](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k) and configure it for VSCode: `"terminal.integrated.fontFamily": "MesloLGS NF"`
+- Install the [Meslo Nerd font](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k)([Here](https://github.com/ronniedroid/getnf)'s a nicer way) and configure it for VSCode:\
+  `"terminal.integrated.fontFamily": "MesloLGS NF"`
 - Set `ZSH_THEME="powerlevel10k/powerlevel10k"` in `~/.zshrc` and run `source ~/.zshrc`.
 - TODO: Add personal colortheme.
 - Add zsh plugins: [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions), [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting).
 - _Not tried yet. Verification needed:_ Setup zsh web search, [infinite scrolling](https://curiouslychase.com/posts/setup-iterm2-infinite-scrollback/), persistent history and other plugins given [here](https://safjan.com/top-popular-zsh-plugins-on-github-2023/).
-- Set background image for iterm2.
+- Set background image for iterm2. iTerm2 > Settings > Profiles > Window _TODO: Add background image to this repo_
+- Set font size around 19 that is also a divisor of screen height. This ensures there is no blank space under the status line. iTerm2 > Settings > Profiles > Text
+- TODO: Add vim motions to the terminal. Maybe this is a tmux thing
 
 ## Tmux
 
-TODO
+This was written long after actually setting up the environment so in case you find anything missing or incorrect while running this, please update here.
+
+- Install [tmux](https://github.com/tmux/tmux/wiki) \
+  `brew install tmux`
+- Copy `.tmux.conf` from this repo to `~/.tmux.conf`
 
 ## Nvim
 
-TODO
+This was written long after actually setting up the environment so in case you find anything missing or incorrect while running this, please update here.
+
+- Install [neovim](https://neovim.io/) \
+  `brew install neovim`
+- Copy the nvim folder to the config. _Note the TODOs in the nvim folder. Work on them when possible_ \
+  `cp nvim ~/.config/`
+- Run `nvim`. It will automatically install and setup everything. _Needs verification_
+- _TODO: Consider coc instead of mason+mason-lspconfig. You can also see lunarvim coz it has pretty good defaults_:w
