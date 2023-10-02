@@ -20,8 +20,8 @@ I used to use [regolith](https://regolith-linux.org/) based on [i3](https://i3wm
 - Install [VSCode](https://code.visualstudio.com/).
 - Install homebrew. \
   `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
-- Install git, curl and wget. \
-  `brew install git curl wget`
+- Install [git](https://git-scm.com), [curl](https://curl.se), [wget](https://www.gnu.org/software/wget/), [fzf](https://github.com/junegunn/fzf), [ripgrep](https://github.com/BurntSushi/ripgrep), [fd](https://github.com/sharkdp/fd), [exa](https://the.exa.website), [z](https://github.com/rupa/z), [bat](https://github.com/sharkdp/bat), [bat-extras](https://github.com/eth-p/bat-extras). \
+  `brew install git curl wget fzf bat ripgrep fd z bat-extras`
 - Clone this repo locally. \
   `git clone git@github.com:oddgr8/config.git`
 
@@ -30,6 +30,9 @@ I used to use [regolith](https://regolith-linux.org/) based on [i3](https://i3wm
 This was written long after actually setting up the environment so in case you find anything missing or incorrect while running this, please update here.
 
 - Install [iterm2](https://iterm2.com/).
+- Iterm2 > Settings > General > Preferences > Enable "Load preferences from custom URL or folder" > Point it to the iterm2 folder of this repo
+- Iterm2 > Settings > Profiles > Other Actions > Import JSON Profile > select the profile in iterm2 folder of this repo
+- Iterm2 > Settings > Profiles > Window > Change background image to Background.jpg from this repo
 - Install [oh-my-zsh](https://ohmyz.sh/). \
   `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
 - Install [powerlevel10k](https://github.com/romkatv/powerlevel10k). \
@@ -39,6 +42,8 @@ This was written long after actually setting up the environment so in case you f
   `"terminal.integrated.fontFamily": "MesloLGS NF"`
 - Set `ZSH_THEME="powerlevel10k/powerlevel10k"` in `~/.zshrc` and run `source ~/.zshrc`.
 - TODO: Add personal colortheme.
+- Must-have zsh plugins: [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions), [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting),
+- Considerable zsh plugins: [alias-maker](https://github.com/MefitHp/alias-maker), [alias-tips](https://github.com/djui/alias-tips)
 - Add zsh plugins: [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions), [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting).
 - _Not tried yet. Verification needed:_ Setup zsh web search, [infinite scrolling](https://curiouslychase.com/posts/setup-iterm2-infinite-scrollback/), persistent history and other plugins given [here](https://safjan.com/top-popular-zsh-plugins-on-github-2023/).
 - Set background image for iterm2. iTerm2 > Settings > Profiles > Window _TODO: Add background image to this repo_
