@@ -55,6 +55,9 @@ This was written long after actually setting up the environment so in case you f
 - Install [tmux](https://github.com/tmux/tmux/wiki) \
   `brew install tmux`
 - Copy `.tmux.conf` from this repo to `~/.tmux.conf`
+- Install [TPM](https://github.com/tmux-plugins/tpm). \
+  `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
+- Install plugins mentioned in `.tmux.conf` automatically by pressing `Ctrl+A I` inside tmux.
 
 ## Nvim
 
