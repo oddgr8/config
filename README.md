@@ -20,7 +20,7 @@ I used to use [regolith](https://regolith-linux.org/) based on [i3](https://i3wm
 - Install [VSCode](https://code.visualstudio.com/).
 - Install homebrew. \
   `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
-- Install [git](https://git-scm.com), [curl](https://curl.se), [wget](https://www.gnu.org/software/wget/), [fzf](https://github.com/junegunn/fzf), [ripgrep](https://github.com/BurntSushi/ripgrep), [fd](https://github.com/sharkdp/fd), [exa](https://the.exa.website), [z](https://github.com/rupa/z), [bat](https://github.com/sharkdp/bat), [bat-extras](https://github.com/eth-p/bat-extras). \
+- Install [git](https://git-scm.com), [curl](https://curl.se), [wget](https://www.gnu.org/software/wget/), [fzf](https://github.com/junegunn/fzf), [ripgrep](https://github.com/BurntSushi/ripgrep), [fd](https://github.com/sharkdp/fd), [exa](https://the.exa.website), [z](https://github.com/rupa/z), [bat](https://github.com/sharkdp/bat), and [bat-extras](https://github.com/eth-p/bat-extras). \
   `brew install git curl wget fzf bat ripgrep fd z bat-extras`
 - Clone this repo locally. \
   `git clone git@github.com:oddgr8/config.git`
@@ -42,11 +42,8 @@ This was written long after actually setting up the environment so in case you f
 - Iterm2 > Settings > Profiles > Other Actions > Import JSON Profile > select the profile in iterm2 folder of this repo.
 - Iterm2 > Settings > Profiles > Window > Change background image to Background.jpg from this repo.
 - TODO: Add personal colortheme.
-- Must-have zsh plugins: [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions), [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting),
-- Considerable zsh plugins: [alias-maker](https://github.com/MefitHp/alias-maker), [alias-tips](https://github.com/djui/alias-tips)
-- Add zsh plugins: [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions), [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting).
-- Set font size to a divisor of screen height. This ensures there is no blank space under the status line. iTerm2 > Settings > Profiles > Text
-- TODO: Add vim motions to the terminal. Maybe this is a tmux thing
+- Must-have zsh plugins: [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions), [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting), and [zsh-vi-mode](https://github.com/jeffreytse/zsh-vi-mode).
+- Considerable zsh plugins: [alias-maker](https://github.com/MefitHp/alias-maker), and [alias-tips](https://github.com/djui/alias-tips).
 
 ## Tmux
 
@@ -58,6 +55,7 @@ This was written long after actually setting up the environment so in case you f
 - Install [TPM](https://github.com/tmux-plugins/tpm). \
   `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
 - Install plugins mentioned in `.tmux.conf` automatically by pressing `Ctrl+A I` inside tmux.
+- Set Iterm2 font size to a divisor of screen height. This ensures there is no blank space under the status line. iTerm2 > Settings > Profiles > Text.
 
 ## Nvim
 
