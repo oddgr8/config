@@ -30,9 +30,6 @@ I used to use [regolith](https://regolith-linux.org/) based on [i3](https://i3wm
 This was written long after actually setting up the environment so in case you find anything missing or incorrect while running this, please update here.
 
 - Install [iterm2](https://iterm2.com/).
-- Iterm2 > Settings > General > Preferences > Enable "Load preferences from custom URL or folder" > Point it to the iterm2 folder of this repo
-- Iterm2 > Settings > Profiles > Other Actions > Import JSON Profile > select the profile in iterm2 folder of this repo
-- Iterm2 > Settings > Profiles > Window > Change background image to Background.jpg from this repo
 - Install [oh-my-zsh](https://ohmyz.sh/). \
   `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
 - Install [powerlevel10k](https://github.com/romkatv/powerlevel10k). \
@@ -41,13 +38,14 @@ This was written long after actually setting up the environment so in case you f
 - Install the [Meslo Nerd font](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k)([Here](https://github.com/ronniedroid/getnf)'s a nicer way) and configure it for VSCode:\
   `"terminal.integrated.fontFamily": "MesloLGS NF"`
 - Set `ZSH_THEME="powerlevel10k/powerlevel10k"` in `~/.zshrc` and run `source ~/.zshrc`.
+- Iterm2 > Settings > General > Preferences > Enable "Load preferences from custom URL or folder" > Point it to the iterm2 folder of this repo.
+- Iterm2 > Settings > Profiles > Other Actions > Import JSON Profile > select the profile in iterm2 folder of this repo.
+- Iterm2 > Settings > Profiles > Window > Change background image to Background.jpg from this repo.
 - TODO: Add personal colortheme.
 - Must-have zsh plugins: [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions), [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting),
 - Considerable zsh plugins: [alias-maker](https://github.com/MefitHp/alias-maker), [alias-tips](https://github.com/djui/alias-tips)
 - Add zsh plugins: [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions), [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting).
-- _Not tried yet. Verification needed:_ Setup zsh web search, [infinite scrolling](https://curiouslychase.com/posts/setup-iterm2-infinite-scrollback/), persistent history and other plugins given [here](https://safjan.com/top-popular-zsh-plugins-on-github-2023/).
-- Set background image for iterm2. iTerm2 > Settings > Profiles > Window _TODO: Add background image to this repo_
-- Set font size around 19 that is also a divisor of screen height. This ensures there is no blank space under the status line. iTerm2 > Settings > Profiles > Text
+- Set font size to a divisor of screen height. This ensures there is no blank space under the status line. iTerm2 > Settings > Profiles > Text
 - TODO: Add vim motions to the terminal. Maybe this is a tmux thing
 
 ## Tmux
