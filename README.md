@@ -27,8 +27,6 @@ I used to use [regolith](https://regolith-linux.org/) based on [i3](https://i3wm
 
 ## Terminal emulator
 
-This was written long after actually setting up the environment so in case you find anything missing or incorrect while running this, please update here.
-
 - Install [iterm2](https://iterm2.com/).
 - Install [oh-my-zsh](https://ohmyz.sh/). \
   `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
@@ -47,8 +45,6 @@ This was written long after actually setting up the environment so in case you f
 
 ## Tmux
 
-This was written long after actually setting up the environment so in case you find anything missing or incorrect while running this, please update here.
-
 - Install [tmux](https://github.com/tmux/tmux/wiki) \
   `brew install tmux`
 - Copy `.tmux.conf` from this repo to `~/.tmux.conf`
@@ -57,9 +53,21 @@ This was written long after actually setting up the environment so in case you f
 - Install plugins mentioned in `.tmux.conf` automatically by pressing `Ctrl+A I` inside tmux.
 - Set Iterm2 font size to a divisor of screen height. This ensures there is no blank space under the status line. iTerm2 > Settings > Profiles > Text.
 
+## LunarVim
+
+- Install [LunarVim](https://www.lunarvim.org). Don't worry if some dependency installation fails. It will still work. \
+  `LV_BRANCH='release-1.3/neovim-0.9' bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.3/neovim-0.9/utils/installer/install.sh)`
+- Run `lvim`. It will automatically install and setup everything.
+- Inside lvim press `Space L c` to open the config file and add the following: 
+  ```
+  lvim.transparent_window = true
+  lvim.plugins = {
+    {"christoomey/vim-tmux-navigator"}
+  }
+  ```
 ## Nvim
 
-This was written long after actually setting up the environment so in case you find anything missing or incorrect while running this, please update here.
+:warning: Not required anymore since we have moved to LunarVim now.
 
 - Install [neovim](https://neovim.io/) \
   `brew install neovim`
