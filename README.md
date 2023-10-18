@@ -64,6 +64,8 @@ I used to use [regolith](https://regolith-linux.org/) based on [i3](https://i3wm
   lvim.plugins = {
     {"christoomey/vim-tmux-navigator"}
   }
+  lvim.keys.normal_mode["|"] = ":vsplit<CR>"
+  lvim.keys.normal_mode["-"] = ":split<CR>"
   ```
 ## Nvim
 
