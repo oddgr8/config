@@ -41,7 +41,8 @@ I used to use [regolith](https://regolith-linux.org/) based on [i3](https://i3wm
 - Iterm2 > Settings > Profiles > Window > Change background image to Background.jpg from this repo.
 - TODO: Add personal colortheme.
 - Must-have zsh plugins: [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions), [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting), and [zsh-vi-mode](https://github.com/jeffreytse/zsh-vi-mode).
-- Considerable zsh plugins: [alias-maker](https://github.com/MefitHp/alias-maker), and [alias-tips](https://github.com/djui/alias-tips).
+- Considerable zsh plugins: [alias-maker](https://github.com/MefitHp/alias-maker), [alias-tips](https://github.com/djui/alias-tips), [sudo](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/sudo).
+- TODO: Add fzf to git, fuzzy autocomplete, etc.
 
 ## Tmux
 
