@@ -58,16 +58,11 @@ I used to use [regolith](https://regolith-linux.org/) based on [i3](https://i3wm
 
 - Install [LunarVim](https://www.lunarvim.org). Don't worry if some dependency installation fails. It will still work. \
   `LV_BRANCH='release-1.3/neovim-0.9' bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.3/neovim-0.9/utils/installer/install.sh)`
+- Copy the config file from this repo to your lvim config. \
+  `cp lvim/config.lua ~/.config/lvim/config.lua`
 - Run `lvim`. It will automatically install and setup everything.
 - Inside lvim press `Space L c` to open the config file and add the following: 
-  ```
-  lvim.transparent_window = true
-  lvim.plugins = {
-    {"christoomey/vim-tmux-navigator"}
-  }
-  lvim.keys.normal_mode["|"] = ":vsplit<CR>"
-  lvim.keys.normal_mode["-"] = ":split<CR>"
-  ```
+
 ## Nvim
 
 :warning: Not required anymore since we have moved to LunarVim now.
