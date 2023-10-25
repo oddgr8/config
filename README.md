@@ -20,8 +20,10 @@ I used to use [regolith](https://regolith-linux.org/) based on [i3](https://i3wm
 - Install [VSCode](https://code.visualstudio.com/).
 - Install homebrew. \
   `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
-- Install [git](https://git-scm.com), [curl](https://curl.se), [wget](https://www.gnu.org/software/wget/), [fzf](https://github.com/junegunn/fzf), [ripgrep](https://github.com/BurntSushi/ripgrep), [fd](https://github.com/sharkdp/fd), [exa](https://the.exa.website), [z](https://github.com/rupa/z), [bat](https://github.com/sharkdp/bat), and [bat-extras](https://github.com/eth-p/bat-extras). \
-  `brew install git curl wget fzf bat ripgrep fd z bat-extras`
+- Install [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH), [git](https://git-scm.com), [curl](https://curl.se), [wget](https://www.gnu.org/software/wget/), [fzf](https://github.com/junegunn/fzf), [ripgrep](https://github.com/BurntSushi/ripgrep), [exa](https://the.exa.website),  [bat](https://github.com/sharkdp/bat), [fd](https://github.com/sharkdp/fd), [z](https://github.com/rupa/z), and [bat-extras](https://github.com/eth-p/bat-extras). \
+  `brew install git curl wget fzf ripgrep bat fd z bat-extras`
+- Set zsh as default shell. \
+  `chsh -s $(which zsh)`
 - Clone this repo locally. \
   `git clone git@github.com:oddgr8/config.git`
 
@@ -40,6 +42,15 @@ I used to use [regolith](https://regolith-linux.org/) based on [i3](https://i3wm
 - Iterm2 > Settings > Profiles > Other Actions > Import JSON Profile > select the profile in iterm2 folder of this repo.
 - Iterm2 > Settings > Profiles > Window > Change background image to Background.jpg from this repo.
 - TODO: Add personal colortheme.
+- Install zsh plugins:
+  ```
+  git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+  git clone https://github.com/jeffreytse/zsh-vi-mode ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-vi-mode
+  git clone https://github.com/MefitHp/alias-maker.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/alias-maker
+  git clone https://github.com/djui/alias-tips.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/alias-tips
+  ```
+- Copy `.zshrc` from this repo to `~/.zshrc`.
 - Must-have zsh plugins: [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions), [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting), and [zsh-vi-mode](https://github.com/jeffreytse/zsh-vi-mode).
 - Considerable zsh plugins: [alias-maker](https://github.com/MefitHp/alias-maker), [alias-tips](https://github.com/djui/alias-tips), [sudo](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/sudo).
 - TODO: Add fzf to git, fuzzy autocomplete, etc.
