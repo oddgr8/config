@@ -61,7 +61,6 @@ I used to use [regolith](https://regolith-linux.org/) based on [i3](https://i3wm
 - Copy the config file from this repo to your lvim config. \
   `cp lvim/config.lua ~/.config/lvim/config.lua`
 - Run `lvim`. It will automatically install and setup everything.
-- Inside lvim press `Space L c` to open the config file and add the following: 
 
 ## Nvim
 
