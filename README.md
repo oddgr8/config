@@ -51,8 +51,6 @@ I used to use [regolith](https://regolith-linux.org/) based on [i3](https://i3wm
   git clone https://github.com/djui/alias-tips.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/alias-tips
   ```
 - Copy `.zshrc` from this repo to `~/.zshrc`.
-- Must-have zsh plugins: [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions), [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting), and [zsh-vi-mode](https://github.com/jeffreytse/zsh-vi-mode).
-- Considerable zsh plugins: [alias-maker](https://github.com/MefitHp/alias-maker), [alias-tips](https://github.com/djui/alias-tips), [sudo](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/sudo).
 - TODO: Add fzf to git, fuzzy autocomplete, etc.
 
 ## Tmux
