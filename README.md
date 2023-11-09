@@ -20,8 +20,8 @@ I used to use [regolith](https://regolith-linux.org/) based on [i3](https://i3wm
 - Install [VSCode](https://code.visualstudio.com/).
 - Install homebrew. \
   `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
-- Install [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH), [git](https://git-scm.com), [zsh](https://zsh.sourceforge.io), [curl](https://curl.se), [wget](https://www.gnu.org/software/wget/), [fzf](https://github.com/junegunn/fzf), [ripgrep](https://github.com/BurntSushi/ripgrep), [exa](https://the.exa.website),  [bat](https://github.com/sharkdp/bat), [fd](https://github.com/sharkdp/fd), [z](https://github.com/rupa/z), and [bat-extras](https://github.com/eth-p/bat-extras). \
-  `brew install git curl wget fzf ripgrep bat fd z bat-extras`
+- Install [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH), [git](https://git-scm.com), [zsh](https://zsh.sourceforge.io), [make](https://www.gnu.org/software/make/manual/make.html), [cargo](https://doc.rust-lang.org/stable/cargo/), [pip](https://pypi.org/project/pip/) [curl](https://curl.se), [wget](https://www.gnu.org/software/wget/), [fzf](https://github.com/junegunn/fzf), [nodejs](https://nodejs.org/en/), [ripgrep](https://github.com/BurntSushi/ripgrep), [exa](https://the.exa.website),  [bat](https://github.com/sharkdp/bat), [fd](https://github.com/sharkdp/fd), [z](https://github.com/rupa/z), and [bat-extras](https://github.com/eth-p/bat-extras). \
+  `brew install git zsh make cargo pip curl wget fzf nodejs ripgrep bat fd z bat-extras`
 - Set zsh as default shell. \
   `chsh -s $(which zsh)`
 - Clone this repo locally. \
