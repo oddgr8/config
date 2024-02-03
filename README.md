@@ -73,10 +73,11 @@ I used to use [regolith](https://regolith-linux.org/) based on [i3](https://i3wm
 
 ## Nvim
 
-:warning: Not required anymore since we have moved to LunarVim now.
+:warning: Required only as a prerequisite for LunarVim
 
-- Install [neovim](https://neovim.io/) \
-  `brew install neovim`
+- Install [neovim](https://neovim.io/) either through package manager or through script:\
+  `brew install neovim #  OR` \
+  `bash install_nvim.sh` 
 - Copy the nvim folder to the config. _Note the TODOs in the nvim folder. Work on them when possible_ \
   `cp nvim ~/.config/`
 - Run `nvim`. It will automatically install and setup everything. _Needs verification_
