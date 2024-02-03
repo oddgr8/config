@@ -63,6 +63,15 @@ I used to use [regolith](https://regolith-linux.org/) based on [i3](https://i3wm
 - Install plugins mentioned in `.tmux.conf` automatically by pressing `Ctrl+A I` inside tmux.
 - Set Iterm2 font size to a divisor of screen height. This ensures there is no blank space under the status line. iTerm2 > Settings > Profiles > Text.
 
+## Nvim
+
+Required only as a prerequisite for LunarVim
+
+- Install [neovim](https://neovim.io/) either through package manager or through script:\
+  `brew install neovim #  OR` \
+  `bash install_nvim.sh`
+- We have a nvim config in this repo which is not used anymore. You can copy it into the nvim config folder and everything will be installed automatically, though it is not required anymore
+  
 ## LunarVim
 
 - Install [LunarVim](https://www.lunarvim.org). Don't worry if some dependency installation fails. It will still work. \
@@ -70,15 +79,3 @@ I used to use [regolith](https://regolith-linux.org/) based on [i3](https://i3wm
 - Copy the config file from this repo to your lvim config. \
   `cp lvim/config.lua ~/.config/lvim/config.lua`
 - Run `lvim`. It will automatically install and setup everything.
-
-## Nvim
-
-:warning: Required only as a prerequisite for LunarVim
-
-- Install [neovim](https://neovim.io/) either through package manager or through script:\
-  `brew install neovim #  OR` \
-  `bash install_nvim.sh` 
-- Copy the nvim folder to the config. _Note the TODOs in the nvim folder. Work on them when possible_ \
-  `cp nvim ~/.config/`
-- Run `nvim`. It will automatically install and setup everything. _Needs verification_
-- _TODO: Consider coc instead of mason+mason-lspconfig. You can also see lunarvim coz it has pretty good defaults_:w
