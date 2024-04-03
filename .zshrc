@@ -113,8 +113,7 @@ export HISTSIZE=100000
 export SAVEHIST=100000
 
 # [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-eval "$(zoxide init zsh)"
-alias cd=z
+
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -123,5 +122,9 @@ alias cd=z
 bindkey -v
 
 alias ls=exa
+eval "$(zoxide init zsh)"
+alias cd=z
+alias cat=bat
+
 # zsh-vi-mode overwrites some keybindings so this fixes that
 zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
