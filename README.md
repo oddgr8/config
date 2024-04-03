@@ -21,7 +21,7 @@ I used to use [regolith](https://regolith-linux.org/) based on [i3](https://i3wm
 - Install homebrew. \
   `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 - Install [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH), [tmux](https://github.com/tmux/tmux/wiki), [git](https://git-scm.com), [zsh](https://zsh.sourceforge.io), [make](https://www.gnu.org/software/make/manual/make.html), [cargo](https://doc.rust-lang.org/stable/cargo/), [pip](https://pypi.org/project/pip/) [curl](https://curl.se), [wget](https://www.gnu.org/software/wget/), [fzf](https://github.com/junegunn/fzf), [zoxide](https://github.com/ajeetdsouza/zoxide), [nodejs](https://nodejs.org/en/), [ripgrep](https://github.com/BurntSushi/ripgrep), [exa](https://the.exa.website),  [bat](https://github.com/sharkdp/bat), [fd](https://github.com/sharkdp/fd), [z](https://github.com/rupa/z), and [bat-extras](https://github.com/eth-p/bat-extras). \
-  `brew install git rmux zsh make cargo pip curl wget fzf nodejs ripgrep exa bat fd z bat-extras`
+  `brew install git rmux zsh make cargo pip curl wget fzf zoxide nodejs ripgrep exa bat fd z bat-extras`
 - Set zsh as default shell. \
   `chsh -s $(which zsh)`
 - Clone this repo locally. \
