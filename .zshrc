@@ -113,6 +113,8 @@ export HISTSIZE=100000
 export SAVEHIST=100000
 
 # [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+eval "$(zoxide init zsh)"
+alias cd=z
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
