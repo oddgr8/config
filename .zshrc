@@ -78,7 +78,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting alias-maker zsh-vi-mode sudo) 
+plugins=(git zsh-autosuggestions fzf-tab fast-syntax-highlighting alias-maker zsh-vi-mode sudo) 
 
 source $ZSH/oh-my-zsh.sh
 
@@ -121,10 +121,22 @@ export SAVEHIST=100000
 # Use vim-like key bindings instead of emacs
 bindkey -v
 
-alias ls=exa
+alias ls=lsd
 eval "$(zoxide init zsh)"
 alias cd=z
-alias cat=bat
+alias fzfp="fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'"
 
 # zsh-vi-mode overwrites some keybindings so this fixes that
-zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
+# zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
+zvm_after_init_commands+=('source <(fzf --zsh)')
+
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+gch() {
+ git checkout “$(git branch — all | fzf| tr -d ‘[:space:]’)”
+}
+
+alias python=python3
+alias pip=pip3
+
