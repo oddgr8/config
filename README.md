@@ -52,6 +52,8 @@ I used to use [regolith](https://regolith-linux.org/) based on [i3](https://i3wm
   ```
 - Copy `.zshrc` from this repo to `~/.zshrc`.
 - TODO: Add fzf to git, fuzzy autocomplete, etc.
+- TODO: Enable Iterm2 Shell integration
+- Set default multi line pasting behaviour
 
 ## Tmux
 
