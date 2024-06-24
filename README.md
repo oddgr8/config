@@ -14,6 +14,7 @@ I used to use [regolith](https://regolith-linux.org/) based on [i3](https://i3wm
 ## MacOS setup
 
 - Clean up dock. System Settings > Desktop and Dock > Disable "Show recent applications in dock".
+- Autohide dock. System Settings > Desktop and Dock > Enable "Automatically hida and show the Dock"
 - Fix spaces. System Settings > Desktop and Dock > Disable "Automatically rearrange spaces based on most recent use".
 - Reconfigre caps lock to control. System Settings > Keyboard > Keyboard shortcuts > Modifier keys > Set Caps lock to control. _Might want to change single tap to escape and hold to control but that's more complicated._
 - Install raycast. Set up ⌘Space to open raycast instead of Spotlight. _Don't really see any value here. Might skip this._
