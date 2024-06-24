@@ -1,0 +1,33 @@
+{
+    "files.autoSave": "afterDelay",
+    "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace, MesloLGS NF",
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "workbench.sideBar.location": "right",
+    "workbench.activityBar.location": "hidden",
+    "editor.minimap.enabled": false,
+    "workbench.editor.showTabs": "single",
+    "breadcrumbs.enabled": true,
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "git.autofetch": true,
+    "editor.hover.delay": 700,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.autopep8"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "git.confirmSync": false,
+    "cmake.showOptionsMovedNotification": false,
+    "github.copilot.editor.enableAutoCompletions": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "redhat.telemetry.enabled": true,
+}
