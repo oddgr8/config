@@ -27,34 +27,36 @@ I used to use [regolith](https://regolith-linux.org/) based on [i3](https://i3wm
   `chsh -s $(which zsh)`
 - Clone this repo locally. \
   `git clone git@github.com:oddgr8/config.git`
+- Copy the content of `vscode/settings.json` into VSCode User Settings.json.
 
 ## Terminal emulator
 
 - Install [iterm2](https://iterm2.com/).
 - Install [oh-my-zsh](https://ohmyz.sh/). This usually re-writes the .zshrc so make sure you have a backup. Use it to restore previous settings after all the set up is finished. \
   `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
-- Install and configure [powerlevel10k](https://github.com/romkatv/powerlevel10k). \
+- Install [powerlevel10k](https://github.com/romkatv/powerlevel10k). \
   `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k`.
 - Install the [Meslo Nerd font](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k)([Here](https://github.com/ronniedroid/getnf)'s a nicer way) and configure it for VSCode:\
   `"terminal.integrated.fontFamily": "MesloLGS NF"`
 - Set `ZSH_THEME="powerlevel10k/powerlevel10k"` in `~/.zshrc` and run `source ~/.zshrc`.
-- Iterm2 > Settings > General > Preferences > Enable "Load preferences from custom URL or folder" > Point it to the iterm2 folder of this repo.
+- Run `source .zshrc` to configure it.
+- Iterm2 > Settings > General > Settings > Enable "Load preferences from custom URL or folder" > Point it to the iterm2 folder of this repo.
+- Quit and restart iterm2. It should set everything up already assuming the absolute path is `/Users/onkardeshpande/config/iterm2`
+- If that doesn't work, follow the next 3 steps:
 - Iterm2 > Settings > Profiles > Other Actions > Import JSON Profile > select the profile in iterm2 folder of this repo and set it as default.
 - Iterm2 > Settings > Profiles > Window > Change background image to Background.jpg from this repo.
 - Iterm2 > Appearance > Theme > Select "Minimal"
-- TODO: Add personal colortheme.
+- Iterm2 > "Make iTerm2 Default Term" and "Install Shell Integration"
 - Install zsh plugins:
   ```
   git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+  git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting
   git clone https://github.com/jeffreytse/zsh-vi-mode ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-vi-mode
   git clone https://github.com/MefitHp/alias-maker.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/alias-maker
   git clone https://github.com/djui/alias-tips.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/alias-tips
+  git clone https://github.com/Aloxaf/fzf-tab ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fzf-tab
   ```
 - Copy `.zshrc` from this repo to `~/.zshrc`.
-- TODO: Add fzf to git, fuzzy autocomplete, etc.
-- TODO: Enable Iterm2 Shell integration
-- Set default multi line pasting behaviour
 
 ## Tmux
 
@@ -69,6 +71,8 @@ I used to use [regolith](https://regolith-linux.org/) based on [i3](https://i3wm
 ## LunarVim
 
 - Go to [LunarVim](https://www.lunarvim.org). Check required [Neovim](https://neovim.io) version and install it.
+- Make sure `which python` and `which pip` are working.
+- Install [NVM](https://github.com/nvm-sh/nvm) and then run `nvm install node`.
 - Install [LunarVim](https://www.lunarvim.org). Don't worry if some dependency installation fails. It will still work.
 - Copy the config file from this repo to your lvim config. \
   `cp lvim/config.lua ~/.config/lvim/config.lua`
