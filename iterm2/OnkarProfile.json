@@ -1,9 +1,5 @@
 {
-  "Ansi 7 Color" : {
-    "Green Component" : 0.73333334922790527,
-    "Red Component" : 0.73333334922790527,
-    "Blue Component" : 0.73333334922790527
-  },
+  "Custom Directory" : "No",
   "Tags" : [
 
   ],
@@ -12,21 +8,18 @@
     "Red Component" : 0.3333333432674408,
     "Blue Component" : 1
   },
-  "Ansi 8 Color" : {
-    "Green Component" : 0.3333333432674408,
-    "Red Component" : 0.3333333432674408,
-    "Blue Component" : 0.3333333432674408
-  },
-  "Ansi 9 Color" : {
-    "Green Component" : 0.3333333432674408,
-    "Red Component" : 1,
-    "Blue Component" : 0.3333333432674408
+  "Normal Font" : "MesloLGS-NF-Regular 15",
+  "Ansi 4 Color" : {
+    "Green Component" : 0,
+    "Red Component" : 0,
+    "Blue Component" : 0.73333334922790527
   },
   "Bold Color" : {
     "Green Component" : 1,
     "Red Component" : 1,
     "Blue Component" : 1
   },
+  "Open Password Manager Automatically" : true,
   "Right Option Key Sends" : 0,
   "Ansi 6 Color" : {
     "Green Component" : 0.73333334922790527,
@@ -35,7 +28,7 @@
   },
   "Rows" : 25,
   "Default Bookmark" : "No",
-  "Blend" : 0.15363734148550726,
+  "Blend" : 0.16918892238451089,
   "Non-ASCII Anti Aliased" : true,
   "Use Bright Bold" : true,
   "Ansi 10 Color" : {
@@ -43,6 +36,7 @@
     "Red Component" : 0.3333333432674408,
     "Blue Component" : 0.3333333432674408
   },
+  "Icon" : 1,
   "Ambiguous Double Width" : false,
   "Jobs to Ignore" : [
     "rlogin",
@@ -68,6 +62,7 @@
   "BM Growl" : true,
   "Command" : "",
   "Description" : "Default",
+  "Load Shell Integration Automatically" : true,
   "Mouse Reporting" : true,
   "Screen" : -1,
   "Selection Color" : {
@@ -109,7 +104,7 @@
     "Blue Component" : 0.3333333432674408
   },
   "Use Italic Font" : true,
-  "Unlimited Scrollback" : false,
+  "Unlimited Scrollback" : true,
   "Keyboard Map" : {
     "0xf700-0x260000" : {
       "Text" : "[1;6A",
@@ -276,8 +271,8 @@
   "Blur Radius" : 0.10000000000000001,
   "Background Image Location" : "\/Users\/onkardeshpande\/config\/Background.jpeg",
   "Blur" : false,
-  "Allow Title Setting" : false,
-  "Scrollback Lines" : 1000,
+  "Allow Title Setting" : true,
+  "Scrollback Lines" : 0,
   "Send Code When Idle" : false,
   "Close Sessions On End" : true,
   "Terminal Type" : "xterm-256color",
@@ -289,6 +284,7 @@
     "Red Component" : 0.3333333432674408,
     "Blue Component" : 1
   },
+  "ASCII Ligatures" : true,
   "Name" : "OnkarProfile",
   "Cursor Text Color" : {
     "Green Component" : 1,
@@ -301,7 +297,40 @@
     "Red Component" : 0.73333334922790527,
     "Blue Component" : 0.73333334922790527
   },
+  "Ansi 0 Color" : {
+    "Green Component" : 0,
+    "Red Component" : 0,
+    "Blue Component" : 0
+  },
+  "Guid" : "A9F89BA2-B9FF-4BE6-A6D1-C45857546F94",
+  "Horizontal Spacing" : 1,
+  "Ansi 3 Color" : {
+    "Green Component" : 0.73333334922790527,
+    "Red Component" : 0.73333334922790527,
+    "Blue Component" : 0
+  },
   "Transparency" : 0,
+  "Ansi 5 Color" : {
+    "Green Component" : 0,
+    "Red Component" : 0.73333334922790527,
+    "Blue Component" : 0.73333334922790527
+  },
+  "Use Non-ASCII Font" : false,
+  "Ansi 7 Color" : {
+    "Green Component" : 0.73333334922790527,
+    "Red Component" : 0.73333334922790527,
+    "Blue Component" : 0.73333334922790527
+  },
+  "Ansi 8 Color" : {
+    "Green Component" : 0.3333333432674408,
+    "Red Component" : 0.3333333432674408,
+    "Blue Component" : 0.3333333432674408
+  },
+  "Ansi 9 Color" : {
+    "Green Component" : 0.3333333432674408,
+    "Red Component" : 1,
+    "Blue Component" : 0.3333333432674408
+  },
   "Ansi 1 Color" : {
     "Green Component" : 0,
     "Red Component" : 0.73333334922790527,
@@ -310,31 +339,6 @@
   "Ansi 2 Color" : {
     "Green Component" : 0.73333334922790527,
     "Red Component" : 0,
-    "Blue Component" : 0
-  },
-  "Custom Directory" : "No",
-  "Ansi 4 Color" : {
-    "Green Component" : 0,
-    "Red Component" : 0,
-    "Blue Component" : 0.73333334922790527
-  },
-  "Ansi 5 Color" : {
-    "Green Component" : 0,
-    "Red Component" : 0.73333334922790527,
-    "Blue Component" : 0.73333334922790527
-  },
-  "Use Non-ASCII Font" : false,
-  "Ansi 0 Color" : {
-    "Green Component" : 0,
-    "Red Component" : 0,
-    "Blue Component" : 0
-  },
-  "Normal Font" : "MesloLGS-NF-Regular 15",
-  "Guid" : "A9F89BA2-B9FF-4BE6-A6D1-C45857546F94",
-  "Horizontal Spacing" : 1,
-  "Ansi 3 Color" : {
-    "Green Component" : 0.73333334922790527,
-    "Red Component" : 0.73333334922790527,
     "Blue Component" : 0
   }
 }
