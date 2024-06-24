@@ -20,8 +20,8 @@ I used to use [regolith](https://regolith-linux.org/) based on [i3](https://i3wm
 - Install [VSCode](https://code.visualstudio.com/).
 - Install homebrew. \
   `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
-- Install [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH), [tmux](https://github.com/tmux/tmux/wiki), [git](https://git-scm.com), [zsh](https://zsh.sourceforge.io), [make](https://www.gnu.org/software/make/manual/make.html), [cargo](https://doc.rust-lang.org/stable/cargo/), [pip](https://pypi.org/project/pip/) [curl](https://curl.se), [wget](https://www.gnu.org/software/wget/), [fzf](https://github.com/junegunn/fzf), [zoxide](https://github.com/ajeetdsouza/zoxide), [nodejs](https://nodejs.org/en/), [ripgrep](https://github.com/BurntSushi/ripgrep), [exa](https://the.exa.website),  [bat](https://github.com/sharkdp/bat), [fd](https://github.com/sharkdp/fd), [z](https://github.com/rupa/z), and [bat-extras](https://github.com/eth-p/bat-extras). \
-  `brew install git tmux zsh make cargo pip curl wget fzf zoxide nodejs ripgrep exa bat fd z bat-extras`
+- Install [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH), [tmux](https://github.com/tmux/tmux/wiki), [git](https://git-scm.com), [zsh](https://zsh.sourceforge.io), [make](https://www.gnu.org/software/make/manual/make.html), [rust](https://www.rust-lang.org), [pip](https://pypi.org/project/pip/) [curl](https://curl.se), [wget](https://www.gnu.org/software/wget/), [fzf](https://github.com/junegunn/fzf), [zoxide](https://github.com/ajeetdsouza/zoxide), [nodejs](https://nodejs.org/en/), [ripgrep](https://github.com/BurntSushi/ripgrep), [lsd](https://github.com/lsd-rs/lsd),  [bat](https://github.com/sharkdp/bat), [fd](https://github.com/sharkdp/fd), [z](https://github.com/rupa/z), and [bat-extras](https://github.com/eth-p/bat-extras). \
+  `brew install git tmux zsh make rust curl wget fzf zoxide nodejs ripgrep lsd bat fd z bat-extras`
 - Set zsh as default shell. \
   `chsh -s $(which zsh)`
 - Clone this repo locally. \
@@ -30,7 +30,7 @@ I used to use [regolith](https://regolith-linux.org/) based on [i3](https://i3wm
 ## Terminal emulator
 
 - Install [iterm2](https://iterm2.com/).
-- Install [oh-my-zsh](https://ohmyz.sh/). \
+- Install [oh-my-zsh](https://ohmyz.sh/). This usually re-writes the .zshrc so make sure you have a backup. Use it to restore previous settings after all the set up is finished. \
   `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
 - Install [powerlevel10k](https://github.com/romkatv/powerlevel10k). \
   `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k`.
@@ -62,20 +62,11 @@ I used to use [regolith](https://regolith-linux.org/) based on [i3](https://i3wm
   `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
 - Install plugins mentioned in `.tmux.conf` automatically by pressing `Ctrl+A I` inside tmux.
 - Set Iterm2 font size to a divisor of screen height. This ensures there is no blank space under the status line. iTerm2 > Settings > Profiles > Text.
-
-## Nvim
-
-Required only as a prerequisite for LunarVim
-
-- Install [neovim](https://neovim.io/) either through package manager or through script:\
-  `brew install neovim #  OR` \
-  `bash install_nvim.sh`
-- We have a nvim config in this repo which is not used anymore. You can copy it into the nvim config folder and everything will be installed automatically, though it is not required anymore
   
 ## LunarVim
 
-- Install [LunarVim](https://www.lunarvim.org). Don't worry if some dependency installation fails. It will still work. \
-  `LV_BRANCH='release-1.3/neovim-0.9' bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.3/neovim-0.9/utils/installer/install.sh)`
+- Go to [LunarVim](https://www.lunarvim.org). Check required [Neovim](https://neovim.io) version and install it.
+- Install [LunarVim](https://www.lunarvim.org). Don't worry if some dependency installation fails. It will still work.
 - Copy the config file from this repo to your lvim config. \
   `cp lvim/config.lua ~/.config/lvim/config.lua`
 - Run `lvim`. It will automatically install and setup everything.
