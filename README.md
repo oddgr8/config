@@ -33,7 +33,10 @@ I used to use [regolith](https://regolith-linux.org/) based on [i3](https://i3wm
 
 - Install [iterm2](https://iterm2.com/).
 - Install [oh-my-zsh](https://ohmyz.sh/) but don't let it change .zshrc. We will do that later. \
-  `export KEEP_ZSHRC=yes; sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+  ```
+  export KEEP_ZSHRC=yes
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  ```
 - Install [powerlevel10k](https://github.com/romkatv/powerlevel10k). \
   `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k`.
 - Install the [Meslo Nerd font](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k)([Here](https://github.com/ronniedroid/getnf)'s a nicer way) and configure it for VSCode:\
@@ -57,10 +60,10 @@ I used to use [regolith](https://regolith-linux.org/) based on [i3](https://i3wm
   git clone https://github.com/Aloxaf/fzf-tab ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fzf-tab
   ```
 - Copy the following to the TOP of your .zshrc
-```
-# Set up theme, oh-my-zsh, personal aliases, etc
-source $HOME/config/.zshrc
-```
+  ```
+  # Set up theme, oh-my-zsh, personal aliases, etc
+  source $HOME/config/.zshrc
+  ```
 
 ## Tmux
 
