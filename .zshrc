@@ -18,12 +18,6 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 # ZSH_THEME="robbyrussell"
 
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in $ZSH/themes/
-# If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
-
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -112,9 +106,6 @@ source $ZSH/oh-my-zsh.sh
 export HISTSIZE=100000
 export SAVEHIST=100000
 
-# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
@@ -123,20 +114,19 @@ bindkey -v
 
 alias ls=lsd
 eval "$(zoxide init zsh)"
-alias cd=z
+# The following alias interferes with Go version manager redefining cd as a function.
+# Better to just use z directly
+# alias cd=z
 alias fzfp="fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'"
 
 # zsh-vi-mode overwrites some keybindings so this fixes that
-# zvm_after_init_commands+=('[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh')
 zvm_after_init_commands+=('source <(fzf --zsh)')
 
+test -e "${HOME}/.iterm3_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
+# gch allows git checkout using fzf.
+# This might not be needed as fzf-tab automatically invokes fzf
 gch() {
- git checkout “$(git branch — all | fzf| tr -d ‘[:space:]’)”
+ git checkout “$(git branch — all | fzf | tr -d ‘[:space:]’)”
 }
-
-alias python=python3
-alias pip=pip3
 
