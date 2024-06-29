@@ -32,7 +32,7 @@ I used to use [regolith](https://regolith-linux.org/) based on [i3](https://i3wm
 ## Terminal emulator
 
 - Install [iterm2](https://iterm2.com/).
-- Install [oh-my-zsh](https://ohmyz.sh/) but don't let it change .zshrc. We will do that later. \
+- Install [oh-my-zsh](https://ohmyz.sh/) but don't let it change .zshrc. We will do that later.
   ```
   export KEEP_ZSHRC=yes
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
