@@ -25,6 +25,8 @@ I used to use [regolith](https://regolith-linux.org/) based on [i3](https://i3wm
   `brew install git tmux zsh make rust curl wget fzf zoxide nodejs ripgrep lsd fd bat bat-extras`
 - Set zsh as default shell. \
   `chsh -s $(which zsh)`
+- Set up git log pretty. \
+  `git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"`
 - Clone this repo locally. \
   `git clone git@github.com:oddgr8/config.git`
 - Copy the content of `vscode/settings.json` into VSCode User Settings.json.
