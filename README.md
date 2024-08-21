@@ -19,16 +19,26 @@ I used to use [regolith](https://regolith-linux.org/) based on [i3](https://i3wm
 - Reconfigre caps lock to control. System Settings > Keyboard > Keyboard shortcuts > Modifier keys > Set Caps lock to control. _Might want to change single tap to escape and hold to control but that's more complicated._
 - Install raycast. Set up ⌘Space to open raycast instead of Spotlight. _Don't really see any value here. Might skip this._
 - Install [VSCode](https://code.visualstudio.com/) and login to your github account if you want to save your settings.
-- Install homebrew. \
-  `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
-- Install [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH), [tmux](https://github.com/tmux/tmux/wiki), [git](https://git-scm.com), [zsh](https://zsh.sourceforge.io), [make](https://www.gnu.org/software/make/manual/make.html), [rust](https://www.rust-lang.org), [pip](https://pypi.org/project/pip/) [curl](https://curl.se), [wget](https://www.gnu.org/software/wget/), [fzf](https://github.com/junegunn/fzf), [zoxide](https://github.com/ajeetdsouza/zoxide), [ripgrep](https://github.com/BurntSushi/ripgrep), [lsd](https://github.com/lsd-rs/lsd), [fd](https://github.com/sharkdp/fd), and [bat](https://github.com/sharkdp/bat), [bat-extras](https://github.com/eth-p/bat-extras). \
-  `brew install git tmux zsh make rust curl wget fzf zoxide ripgrep lsd fd bat bat-extras`
-- Set zsh as default shell. \
-  `chsh -s $(which zsh)`
-- Set up git log pretty. \
-  `git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"`
-- Clone this repo locally. \
-  `git clone git@github.com:oddgr8/config.git`
+- Install homebrew.
+  ```
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  ```
+- Install [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH), [tmux](https://github.com/tmux/tmux/wiki), [git](https://git-scm.com), [zsh](https://zsh.sourceforge.io), [make](https://www.gnu.org/software/make/manual/make.html), [rust](https://www.rust-lang.org), [pip](https://pypi.org/project/pip/) [curl](https://curl.se), [wget](https://www.gnu.org/software/wget/), [fzf](https://github.com/junegunn/fzf), [zoxide](https://github.com/ajeetdsouza/zoxide), [ripgrep](https://github.com/BurntSushi/ripgrep), [lsd](https://github.com/lsd-rs/lsd), [fd](https://github.com/sharkdp/fd), and [bat](https://github.com/sharkdp/bat), [bat-extras](https://github.com/eth-p/bat-extras).
+  ```
+  brew install git tmux zsh make rust curl wget fzf zoxide ripgrep lsd fd bat bat-extras
+  ```
+- Set zsh as default shell.
+  ```
+  chsh -s $(which zsh)
+  ```
+- Set up git log pretty.
+  ```
+  git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+  ```
+- Clone this repo locally.
+  ```
+  git clone git@github.com:oddgr8/config.git
+  ```
 - Copy the content of `vscode/settings.json` into VSCode User Settings.json.
 
 ## Terminal emulator
@@ -39,8 +49,10 @@ I used to use [regolith](https://regolith-linux.org/) based on [i3](https://i3wm
   export KEEP_ZSHRC=yes
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
   ```
-- Install [powerlevel10k](https://github.com/romkatv/powerlevel10k). \
-  `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k`.
+- Install [powerlevel10k](https://github.com/romkatv/powerlevel10k).
+  ```
+  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+  ```
 - Install the [Meslo Nerd font](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k)([Here](https://github.com/ronniedroid/getnf)'s a nicer way) and configure it for VSCode:\
   `"terminal.integrated.fontFamily": "MesloLGS NF"`
 - Set `ZSH_THEME="powerlevel10k/powerlevel10k"` in `~/.zshrc` and run `source ~/.zshrc`.
@@ -69,11 +81,19 @@ I used to use [regolith](https://regolith-linux.org/) based on [i3](https://i3wm
 
 ## Tmux
 
-- Install [tmux](https://github.com/tmux/tmux/wiki) \
-  `brew install tmux`
-- Copy `.tmux.conf` from this repo to `~/.tmux.conf`
-- Install [TPM](https://github.com/tmux-plugins/tpm). \
-  `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
+- Install [tmux](https://github.com/tmux/tmux/wiki)
+  ```
+  brew install tmux
+  ```
+- Create a symbolic so that local config points to the config from the repo.
+  ```
+  rm ~/.tmux.conf
+  ln -s $HOME/config/.tmux.conf ~/.tmux.conf
+  ```
+- Install [TPM](https://github.com/tmux-plugins/tpm).
+  ```
+  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+  ```
 - Install plugins mentioned in `.tmux.conf` automatically by pressing `Ctrl+A I` inside tmux.
 - Set Iterm2 font size to a divisor of screen height. This ensures there is no blank space under the status line. iTerm2 > Settings > Profiles > Text.
   
@@ -83,6 +103,9 @@ I used to use [regolith](https://regolith-linux.org/) based on [i3](https://i3wm
 - Make sure `which python` and `which pip` are working.
 - Install [NVM](https://github.com/nvm-sh/nvm) and then run `nvm install node`.
 - Install [LunarVim](https://www.lunarvim.org). Don't worry if some dependency installation fails. It will still work.
-- Copy the config file from this repo to your lvim config. \
-  `cp lvim/config.lua ~/.config/lvim/config.lua`
+- Create a symbolic so that local config points to the config from the repo.
+  ```
+  rm ~/.config/lvim/config.lua
+  ln -s $HOME/config/lvim/config.lua ~/.config/lvim/config.lua
+  ```
 - Run `lvim`. It will automatically install and setup everything.
