@@ -12,10 +12,13 @@ lvim.plugins = {
 lvim.builtin.which_key.mappings["l"]["c"] = { "<cmd>lua require('swenv.api').pick_venv()<cr>", "Choose Python Env" }
 lvim.builtin.which_key.mappings["s"]["f"] = {
   ":execute 'Telescope find_files default_text=' . expand('<cword>')<cr><esc>",
-  "Files" }
+  "Files(current word)" }
 lvim.builtin.which_key.mappings["s"]["t"] = {
   ":execute 'Telescope live_grep default_text=' . expand('<cword>')<cr><esc>",
-  "Text" }
+  "Text(current word)" }
+lvim.builtin.which_key.mappings["t"] = {
+  ":execute 'Telescope live_grep'<cr>",
+  "Search Text" }
 lvim.keys.normal_mode["|"] = ":vsplit<CR>"
 lvim.keys.normal_mode["-"] = ":split<CR>"
 lvim.format_on_save.enabled = true
