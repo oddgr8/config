@@ -31,13 +31,14 @@ I used to use [regolith](https://regolith-linux.org/) based on [i3](https://i3wm
   ```
   chsh -s $(which zsh)
   ```
-- Set up git log pretty.
-  ```
-  git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-  ```
 - Clone this repo locally.
   ```
   git clone git@github.com:oddgr8/config.git
+  ```
+- Set up git config. This sets the git editor to `lvim` which might not be installed yet. You can ignore that line for now.
+  ```
+  [include]
+    path = config/.gitconfig
   ```
 - Copy the content of `vscode/settings.json` into VSCode User Settings.json.
 
