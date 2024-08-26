@@ -35,7 +35,7 @@ I used to use [regolith](https://regolith-linux.org/) based on [i3](https://i3wm
   ```
   git clone git@github.com:oddgr8/config.git
   ```
-- Set up git config. This sets the git editor to `lvim` which might not be installed yet. You can ignore that line for now.
+- Set up git config by adding this to `~/.gitconfig`. This sets the git editor to `lvim` which might not be installed yet. You can ignore that line for now.
   ```
   [include]
     path = config/.gitconfig
