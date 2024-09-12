@@ -45,7 +45,7 @@ I started with [regolith](https://regolith-linux.org/) based on [i3](https://i3w
 - Install [oh-my-zsh](https://ohmyz.sh/)
 - Install [tmux](https://github.com/tmux/tmux/wiki), [zsh](https://zsh.sourceforge.io), [make](https://www.gnu.org/software/make/manual/make.html), [pip](https://pypi.org/project/pip/) [curl](https://curl.se), [wget](https://www.gnu.org/software/wget/), [fzf](https://github.com/junegunn/fzf), [zoxide](https://github.com/ajeetdsouza/zoxide), [ripgrep](https://github.com/BurntSushi/ripgrep) and [fd](https://github.com/sharkdp/fd)
   ```
-  brew install tmux make curl wget fzf zoxide ripgrep fd# macos
+  brew install tmux make curl wget fzf zoxide ripgrep fd # macos
   sudo apt install tmux make curl wget fzf zoxide ripgrep fd-find # ubuntu
   ```
 - Install [rust](https://www.rust-lang.org)
