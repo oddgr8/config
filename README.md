@@ -56,7 +56,7 @@ I started with [regolith](https://regolith-linux.org/) based on [i3](https://i3w
   ```
   cargo install lsd
   ```
-- Set up git config by adding this to `~/.gitconfig`
+- Set up git config by adding this to `~/.gitconfig`. _NOTE: This sets git editor to lvim which may not yet be installed_
   ```
   [include]
     path = config/.gitconfig
