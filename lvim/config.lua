@@ -7,17 +7,31 @@ lvim.plugins = {
   { "christoomey/vim-tmux-navigator" },
   { "AckslD/swenv.nvim" },
   { "stevearc/dressing.nvim" },
+  { "tpope/vim-repeat" },
+  { "nvim-telescope/telescope-live-grep-args.nvim" },
+  {
+    "ggandor/leap.nvim",
+    name = "leap",
+    config = function()
+      require("leap").add_default_mappings()
+    end,
+  },
 }
+
+lvim.builtin.telescope.on_config_done = function(telescope)
+  pcall(telescope.load_extension, "live_grep_args")
+  -- any other extensions loading
+end
 
 lvim.builtin.which_key.mappings["l"]["c"] = { "<cmd>lua require('swenv.api').pick_venv()<cr>", "Choose Python Env" }
 lvim.builtin.which_key.mappings["s"]["f"] = {
   ":execute 'Telescope find_files default_text=' . expand('<cword>')<cr><esc>",
   "Files(current word)" }
 lvim.builtin.which_key.mappings["s"]["t"] = {
-  ":execute 'Telescope live_grep default_text=' . expand('<cword>')<cr><esc>",
+  ":execute 'Telescope live_grep_args default_text=' . expand('<cword>')<cr><esc>",
   "Text(current word)" }
 lvim.builtin.which_key.mappings["t"] = {
-  ":execute 'Telescope live_grep'<cr>",
+  ":execute 'Telescope live_grep_args'<cr>",
   "Search Text" }
 lvim.keys.normal_mode["|"] = ":vsplit<CR>"
 lvim.keys.normal_mode["-"] = ":split<CR>"
