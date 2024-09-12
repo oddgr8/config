@@ -107,7 +107,7 @@ I started with [regolith](https://regolith-linux.org/) based on [i3](https://i3w
   
 ## LunarVim
 
-- Go to [LunarVim](https://www.lunarvim.org). Check required [Neovim](https://neovim.io) version and install it
+- Go to [LunarVim](https://www.lunarvim.org). Check required [Neovim](https://neovim.io) version in the lunarvim install command and install it
 - Make sure `which python` and `which pip` are working
 - Install [NVM](https://github.com/nvm-sh/nvm) and then run `nvm install node`
 - Install [LunarVim](https://www.lunarvim.org). Don't worry if some dependency installation fails. It will still work
