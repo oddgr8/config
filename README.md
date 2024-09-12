@@ -24,7 +24,7 @@ I started with [regolith](https://regolith-linux.org/) based on [i3](https://i3w
   ```
 - Clone this repo locally in home folder
   ```
-  git clone git@github.com:oddgr8/config.git
+  git clone https://github.com/oddgr8/config.git
   ```
 
 ## Terminal emulator setup
