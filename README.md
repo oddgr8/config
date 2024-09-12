@@ -43,10 +43,13 @@ I started with [regolith](https://regolith-linux.org/) based on [i3](https://i3w
 
 - Install [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) if not already present
 - Install [oh-my-zsh](https://ohmyz.sh/)
-- Install [tmux](https://github.com/tmux/tmux/wiki), [zsh](https://zsh.sourceforge.io), [make](https://www.gnu.org/software/make/manual/make.html), [rust](https://www.rust-lang.org), [pip](https://pypi.org/project/pip/) [curl](https://curl.se), [wget](https://www.gnu.org/software/wget/), [fzf](https://github.com/junegunn/fzf), [zoxide](https://github.com/ajeetdsouza/zoxide), [ripgrep](https://github.com/BurntSushi/ripgrep), [lsd](https://github.com/lsd-rs/lsd), [fd](https://github.com/sharkdp/fd), and [bat](https://github.com/sharkdp/bat), [bat-extras](https://github.com/eth-p/bat-extras).
+- Install [tmux](https://github.com/tmux/tmux/wiki), [zsh](https://zsh.sourceforge.io), [make](https://www.gnu.org/software/make/manual/make.html), [pip](https://pypi.org/project/pip/) [curl](https://curl.se), [wget](https://www.gnu.org/software/wget/), [fzf](https://github.com/junegunn/fzf), [zoxide](https://github.com/ajeetdsouza/zoxide) and [ripgrep](https://github.com/BurntSushi/ripgrep)
   ```
-  brew install tmux make rust curl wget fzf zoxide ripgrep lsd fd bat bat-extras
+  brew install tmux make curl wget fzf zoxide ripgrep lsd fd bat bat-extras
   ```
+- Install [rust](https://www.rust-lang.org)
+- Install [lsd](https://github.com/lsd-rs/lsd)
+- Install [fd](https://github.com/sharkdp/fd)
 - Set up git config by adding this to `~/.gitconfig`
   ```
   [include]
