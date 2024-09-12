@@ -61,13 +61,9 @@ I started with [regolith](https://regolith-linux.org/) based on [i3](https://i3w
   [include]
     path = config/.gitconfig
   ```
-- Install [powerlevel10k](https://github.com/romkatv/powerlevel10k).
+- Install [powerlevel10k](https://github.com/romkatv/powerlevel10k) and zsh plugins.
   ```
   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-  ```
-- Set `ZSH_THEME="powerlevel10k/powerlevel10k"` in `~/.zshrc` and run `source ~/.zshrc`.
-- Install zsh plugins:
-  ```
   git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
   git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting
   git clone https://github.com/jeffreytse/zsh-vi-mode ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-vi-mode
@@ -75,11 +71,17 @@ I started with [regolith](https://regolith-linux.org/) based on [i3](https://i3w
   git clone https://github.com/djui/alias-tips.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/alias-tips
   git clone https://github.com/Aloxaf/fzf-tab ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fzf-tab
   ```
+- Add powerlevel10k config
+  ```
+  rm ~/.p10k.zsh
+  ln -s $HOME/config/.p10k.zsh ~/.p10k.zsh
+  ```
 - Copy the following to the TOP of your .zshrc
   ```
   # Set up theme, oh-my-zsh, personal aliases, etc
   source $HOME/config/.zshrc
   ```
+- Run `source .zshrc`
 
 ## Tmux
 
