@@ -8,6 +8,9 @@ fi
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# Sometimes we get fzf not found during setup, this fixes that
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
