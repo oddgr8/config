@@ -66,10 +66,9 @@ I started with [regolith](https://regolith-linux.org/) based on [i3](https://i3w
   ```
   cargo install lsd
   ```
-- Set up git config by adding this to `~/.gitconfig`. _NOTE: This sets git editor to lvim which may not yet be installed_
+- Set up git config. _NOTE: This sets git editor to lvim which may not yet be installed_
   ```
-  [include]
-          path = config/.gitconfig
+  echo "[include]\n\tpath = config/.gitconfig" >> .gitconfig
   ```
 - Install [powerlevel10k](https://github.com/romkatv/powerlevel10k) and zsh plugins.
   ```
