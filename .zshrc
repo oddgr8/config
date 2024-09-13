@@ -133,3 +133,5 @@ gch() {
  git checkout “$(git branch — all | fzf | tr -d ‘[:space:]’)”
 }
 
+# ensure python and pip are available
+[ type python ] || alias python=python3 && alias pip=pip3
