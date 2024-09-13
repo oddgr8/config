@@ -83,7 +83,7 @@ I started with [regolith](https://regolith-linux.org/) based on [i3](https://i3w
   ```
 - Add powerlevel10k config
   ```
-  rm ~/.p10k.zsh
+  rm -f ~/.p10k.zsh
   ln -s $HOME/config/.p10k.zsh ~/.p10k.zsh
   ```
 - Copy the following to the TOP of your .zshrc
@@ -101,7 +101,7 @@ I started with [regolith](https://regolith-linux.org/) based on [i3](https://i3w
   ```
 - Setup up tmux configuration
   ```
-  rm ~/.tmux.conf
+  rm -f ~/.tmux.conf
   ln -s $HOME/config/.tmux.conf ~/.tmux.conf
   ```
 - Install [TPM](https://github.com/tmux-plugins/tpm)
@@ -118,7 +118,7 @@ I started with [regolith](https://regolith-linux.org/) based on [i3](https://i3w
 - Install [LunarVim](https://www.lunarvim.org). Don't worry if some dependency installation fails. It will still work
 - Create a symbolic so that local config points to the config from the repo
   ```
-  rm ~/.config/lvim/config.lua
+  rm -f ~/.config/lvim/config.lua
   ln -s $HOME/config/lvim/config.lua ~/.config/lvim/config.lua
   ```
 - Run `lvim`. It will automatically install and setup everything
