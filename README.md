@@ -48,10 +48,10 @@ I started with [regolith](https://regolith-linux.org/) based on [i3](https://i3w
   cp .zshrc.pre-oh-my-zsh .zshrc
   rm .zshrc.pre-oh-my-zsh
   ```
-- Install [tmux](https://github.com/tmux/tmux/wiki), [zsh](https://zsh.sourceforge.io), [make](https://www.gnu.org/software/make/manual/make.html), [pip](https://pypi.org/project/pip/) [curl](https://curl.se), [wget](https://www.gnu.org/software/wget/), [zoxide](https://github.com/ajeetdsouza/zoxide), [ripgrep](https://github.com/BurntSushi/ripgrep) and [fd](https://github.com/sharkdp/fd)
+- Install [tmux](https://github.com/tmux/tmux/wiki), [zsh](https://zsh.sourceforge.io), [make](https://www.gnu.org/software/make/manual/make.html), [pip](https://pypi.org/project/pip/) [curl](https://curl.se), [wget](https://www.gnu.org/software/wget/) and [zoxide](https://github.com/ajeetdsouza/zoxide)
   ```
-  brew install tmux make curl wget zoxide ripgrep fd # macos
-  apt install build-essential tmux make curl wget zoxide ripgrep fd-find # ubuntu
+  brew install tmux make curl wget zoxide # macos
+  apt install build-essential tmux make curl wget zoxide # ubuntu
   ```
 - Install [fzf](https://github.com/junegunn/fzf)
   ```
@@ -62,9 +62,9 @@ I started with [regolith](https://regolith-linux.org/) based on [i3](https://i3w
   ```
   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
   ```
-- Install [lsd](https://github.com/lsd-rs/lsd)
+- Install [lsd](https://github.com/lsd-rs/lsd), [ripgrep](https://github.com/BurntSushi/ripgrep) and [fd](https://github.com/sharkdp/fd)
   ```
-  cargo install lsd
+  cargo install lsd ripgrep fd-find
   ```
 - Set up git config. _NOTE: This sets git editor to lvim which may not yet be installed_
   ```
